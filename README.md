@@ -6,7 +6,5 @@ Para utilizarla debemos agregar nuestra API key de OpenWeather en "src/app/Weath
 
 # Capturas de pantalla
 
-![01_image]
-(https://raw.githubusercontent.com/Alexb097/weather-app/master/src/assets/images/01_image.png)
-![01_image]
-(https://raw.githubusercontent.com/Alexb097/weather-app/master/src/assets/images/02_image.png)
+![01_image](https://raw.githubusercontent.com/Alexb097/weather-app/master/src/assets/images/01_image.png)
+![01_image](https://raw.githubusercontent.com/Alexb097/weather-app/master/src/assets/images/02_image.png)
