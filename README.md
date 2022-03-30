@@ -1,4 +1,4 @@
-# weather-app
+# Weather App
 
 Aplicación web del tiempo climatico consumiendo API de OpenWeather: https://openweathermap.org/.
 
