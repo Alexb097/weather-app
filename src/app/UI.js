@@ -2,16 +2,20 @@ export class UI {
     constructor(){
         this.location = document.getElementById('weather-location');
         this.desc = document.getElementById('weather-description');
-        this.string = document.getElementById('weather-string');
+        this.temperature = document.getElementById('weather-temperature');
+        this.maxTemperature = document.getElementById('weather-max-temperature');
+        this.minTemperature = document.getElementById('weather-min-temperature');
         this.humidity = document.getElementById('weather-humidity');
         this.wind = document.getElementById('weather-wind');
     }
 
     render(weather){
-        this.location.textContent = weather.name + " / " + weather.sys.country;
-        this.desc.textContent = weather.weather[0]['description'];
-        this.string.textContent = weather.main.temp + ' °C';
-        this.humidity.textContent = 'Humidity: ' + weather.main.humidity + ' %';
-        this.wind.textContent = 'Wind: ' + weather.wind.speed + ' m/s';
+        this.location.innerHTML = weather.name + ' / ' + weather.sys.country;
+        this.temperature.innerHTML = '<b>Temperature:</b> '+ weather.main.temp + ' °C';
+        this.maxTemperature.innerHTML = '<b>Max Temperature:</b> '+ weather.main.temp_max + ' °C';
+        this.minTemperature.innerHTML = '<b>Min Temperature:</b> '+ weather.main.temp_min + ' °C';
+        this.desc.innerHTML = '<b>Weather:</b> ' + weather.weather[0]['description'];
+        this.humidity.innerHTML = '<b>Humidity:</b> ' + weather.main.humidity + ' %';
+        this.wind.innerHTML = '<b>Wind:</b> ' + weather.wind.speed + ' m/s';
     }
 }

@@ -2,8 +2,8 @@ export class Store {
     constructor(){
         this.city;
         this.countryCode;
-        this.defaultCity = 'Dolores';
-        this.defaultCountry = 'ar';
+        this.defaultCity = 'New York';
+        this.defaultCountry = 'us';
     }
 
     getLocationData() {

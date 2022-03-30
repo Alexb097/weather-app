@@ -3,7 +3,7 @@ const { UI } = require('./UI');
 const { Store } = require('./Store');
 
 const store = new Store();
-const { city, countryCode} = store.getLocationData();
+const { city, countryCode } = store.getLocationData();
 const ui = new UI();
 const weather = new Weather(city, countryCode);
 
